@@ -1,0 +1,14 @@
+[Unit]
+Description=Gamified Hockey Shot Backend (Express)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ssugar/claude/gamified-hs/server
+Environment=PATH=/home/ssugar/.nvm/versions/node/v22.21.1/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/home/ssugar/.nvm/versions/node/v22.21.1/bin/npm run dev
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

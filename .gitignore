@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+analyzer/venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Data - contains personal videos and analysis results
+data/videos/
+data/analyses/
+data/players/
+data/sessions/
+data/config/
+data/public_datasets/
+data/puck_v3_public/
+
+# ML models (large binaries)
+analyzer/models/
+runs/
+yolov8n.pt
+*.pt
+*.tflite
+
+# Dataset exports
+dataset_candidates/
+
+# Downloads
+download/
+
+# Build output
+dist/
+
+# Environment / IDE
+.env
+.env.*
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

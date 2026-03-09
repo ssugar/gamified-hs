@@ -1,0 +1,14 @@
+[Unit]
+Description=Gamified Hockey Shot Frontend (Vite)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ssugar/claude/gamified-hs
+Environment=PATH=/home/ssugar/.nvm/versions/node/v22.21.1/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/home/ssugar/.nvm/versions/node/v22.21.1/bin/npm run dev -- --host 0.0.0.0
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
